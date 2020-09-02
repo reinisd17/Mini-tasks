@@ -1,0 +1,15 @@
+def search(list, l, n): 
+  
+    for i in range(0, l): 
+        if (list[i] == n): 
+            return i;
+    return -1;
+  
+list = [1, 2, 3, 4, 5, 6] ;
+l = len(list);
+n = 4;
+result = search(list, l, n)
+if (result == -1): 
+  print("Index not found") ;
+else: 
+  print("element" ,n , "is found at index: " , result) ;
